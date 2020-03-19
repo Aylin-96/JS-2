@@ -163,6 +163,7 @@ function toNumber(a, b, c){
             number += 9;
             break; 
         case "":
+            if(a == "" && b == "")  return NaN;
             number += 0;
             break;
         default:
@@ -176,3 +177,4 @@ console.log(toNumber("", "", "Ноль"));
 console.log(toNumber("", "одиннадцать", ""));
 console.log(toNumber("", "", "четыре"));
 console.log(toNumber("сто", "пятьдесят", ""));
+console.log(toNumber("", "", ""));
