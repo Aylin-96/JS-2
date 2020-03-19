@@ -1,6 +1,7 @@
 function toString(number) {
     if(number < 0 || number > 999){
         console.log("Неверное число");
+        return null;
     }
     else{
         var a = Array(3);
@@ -142,7 +143,7 @@ function toString(number) {
             case 9:
                 a[2] = "девять";          
         }
-        return a;s
+        return a;
     }
 }
 
@@ -151,3 +152,4 @@ console.log(toString(999).join(" "));
 console.log(toString(11).join(" "));
 console.log(toString(4).join(" "));
 console.log(toString(150).join(" "));
+console.log(toString(9999));
